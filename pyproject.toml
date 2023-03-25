@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "selectioncommittee"
+version = "0.1.0"
+description = ""
+authors = ["Nursultan301 <abykeevnursultan14@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "3.2"
+psycopg2-binary = "^2.9.5"
+environs = "^9.5.0"
+djangorestframework = "^3.14.0"
+pillow = "^9.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
