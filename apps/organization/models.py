@@ -33,7 +33,7 @@ class Entrant(models.Model):
             self._meta.get_field('diploma_phone2').blank = True
 
     def __str__(self):
-        return f'{self.fist_name} {self.last_name} {self.full_name}'
+        return f'{self.first_name} {self.last_name} {self.full_name}'
 
     class Meta:
         verbose_name = 'Абитуриент'
