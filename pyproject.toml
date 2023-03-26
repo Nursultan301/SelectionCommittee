@@ -12,6 +12,7 @@ psycopg2-binary = "^2.9.5"
 environs = "^9.5.0"
 djangorestframework = "^3.14.0"
 pillow = "^9.4.0"
+drf-yasg = "^1.21.5"
 
 
 [build-system]
