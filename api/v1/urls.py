@@ -1,8 +1,7 @@
-from django.urls import path
+from rest_framework.routers import SimpleRouter
 from .organization import views
-from rest_framework.urlpatterns import format_suffix_patterns
 
-urlpatterns = format_suffix_patterns([
-    path('entrant/', views.EntrantViewSet.as_view({'get': 'list'})),
-    path('entrant/<int:pk>/', views.EntrantViewSet.as_view({'get': 'retrieve'}))
-])
+router = SimpleRouter()
+router.register("entrants", views.EntrantViewSet)
+
+urlpatterns = router.urls
